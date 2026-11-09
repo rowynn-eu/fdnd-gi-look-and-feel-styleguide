@@ -2,6 +2,33 @@
    https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Styling_basics/Cascade_layers
    https://css-tricks.com/css-cascade-layers/ */
 
+:root {
+    color-scheme: light dark;
+
+    /* ********** */
+    /* foreground */
+    /* ********** */
+
+    --fg-0: light-dark(#333, #fff);
+    --fg-1: light-dark(#444, #eee);
+    --fg-2: light-dark(#555,#ccc);
+
+    /* ********** */
+    /* background */
+    /* ********** */
+
+    --bg-0: light-dark(#fff, #333);
+    --bg-1: light-dark(#eee, #444);
+    --bg-2: light-dark(#ccc, #555);
+
+    /* ****** */
+    /* accent */
+    /* ****** */
+
+    --accent: light-dark(#1f2c41, #1F4DD6);
+    --accent-text: #fff;
+}
+
 @layer styleguide {
 
     /* Schrijf hier de verschillende stijlen, die
