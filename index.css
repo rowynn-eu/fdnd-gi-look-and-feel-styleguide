@@ -46,16 +46,170 @@
 
   figure:not([class]) {
     display: grid;
-    grid-template-columns: 6rem 1fr;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "figcaption figcaption"
+    "code-1 code-2";
     align-items: center;
     gap: 1rem;
     margin: 1rem 0;
+    padding-bottom: 2em;
     > code {
+      grid-area: code-1;
       display: grid;
       place-items: center;
       border-radius: 50%;
+      height: auto;
+      width: 128px;
       aspect-ratio: 1;
-      background: #ccc;
+    }
+    > figcaption {
+      grid-area: figcaption;
+      align-self: start;
+    }
+
+    code:nth-of-type(1) {
+      grid-area: code-1;
+    }
+    
+    code:nth-of-type(2) {
+      grid-area: code-2;
+    }
+  }
+
+  figure:nth-of-type(1) {
+
+    code { 
+      color:var(--accent);
+      background-color: var(--accent-text);
+      border: 0.25em solid var(--fg-0);
+    }
+
+    > code:nth-of-type(1) {
+      color-scheme: light;
+    }
+
+    > code:nth-of-type(2) {
+      color-scheme: dark;
+    }
+  }
+
+    figure:nth-of-type(2) {
+
+    code { 
+      color:var(--accent-text);
+      background-color: var(--accent);
+      border: 0.25em solid var(--accent-text);
+    }
+
+    > code:nth-of-type(1) {
+      color-scheme: light;
+    }
+
+    > code:nth-of-type(2) {
+      color-scheme: dark;
+    }
+  }
+
+  figure:nth-of-type(3) {
+
+    code { 
+      color:var(--bg-0);
+      background-color: var(--fg-0);
+      border: 0.25em solid var(--bg-1);
+    }
+
+    > code:nth-of-type(1) {
+      color-scheme: light;
+    }
+
+    > code:nth-of-type(2) {
+      color-scheme: dark;
+    }
+  }
+
+    figure:nth-of-type(4) {
+
+    code { 
+      color:var(--bg-0);
+      background-color: var(--fg-1);
+      border: 0.25em solid var(--bg-1);
+    }
+
+    > code:nth-of-type(1) {
+      color-scheme: light;
+    }
+
+    > code:nth-of-type(2) {
+      color-scheme: dark;
+    }
+  }
+
+    figure:nth-of-type(5) {
+
+    code { 
+      color:var(--bg-0);
+      background-color: var(--fg-2);
+      border: 0.25em solid var(--bg-1);
+    }
+
+    > code:nth-of-type(1) {
+      color-scheme: light;
+    }
+
+    > code:nth-of-type(2) {
+      color-scheme: dark;
+    }
+  }
+
+    figure:nth-of-type(6) {
+
+    code { 
+      color:var(--fg-0);
+      background-color: var(--bg-0);
+      border: 0.25em solid var(--bg-1);
+    }
+
+    > code:nth-of-type(1) {
+      color-scheme: light;
+    }
+
+    > code:nth-of-type(2) {
+      color-scheme: dark;
+    }
+  }
+  
+    figure:nth-of-type(7) {
+
+    code { 
+      color:var(--fg-0);
+      background-color: var(--bg-1);
+      border: 0.25em solid var(--bg-1);
+    }
+
+    > code:nth-of-type(1) {
+      color-scheme: light;
+    }
+
+    > code:nth-of-type(2) {
+      color-scheme: dark;
+    }
+  }
+
+    figure:nth-of-type(8) {
+
+    code { 
+      color:var(--fg-0);
+      background-color: var(--bg-2);
+      border: 0.25em solid var(--bg-1);
+    }
+
+    > code:nth-of-type(1) {
+      color-scheme: light;
+    }
+
+    > code:nth-of-type(2) {
+      color-scheme: dark;
     }
   }
 

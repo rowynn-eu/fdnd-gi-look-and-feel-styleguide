@@ -32,7 +32,7 @@
     --accent: light-dark(#1f2c41, #1F4DD6);
     --accent-text: #fff;
 
-    
+
 
     /* ******* */
     /* Spacing */
@@ -69,10 +69,7 @@
     /* ******* */
     /* Kleuren */
     /* ******* */
-
-    .accent {
-        background-color: var(--accent);
-    }
+    
 
     /* ********** */
     /* Typografie */
