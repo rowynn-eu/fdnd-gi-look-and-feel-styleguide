@@ -6,42 +6,81 @@
     color-scheme: light dark;
 
     /* ********** */
-    /* foreground */
+    /* Foreground */
     /* ********** */
 
     --fg-0: light-dark(#333, #fff);
     --fg-1: light-dark(#444, #eee);
     --fg-2: light-dark(#555,#ccc);
 
+
+
     /* ********** */
-    /* background */
+    /* Background */
     /* ********** */
 
     --bg-0: light-dark(#fff, #333);
     --bg-1: light-dark(#eee, #444);
     --bg-2: light-dark(#ccc, #555);
 
+
+    
     /* ****** */
-    /* accent */
+    /* Accent */
     /* ****** */
 
     --accent: light-dark(#1f2c41, #1F4DD6);
     --accent-text: #fff;
+
+    
+
+    /* ******* */
+    /* Spacing */
+    /* ******* */
+
+    /* --spacing-sm: ??? */
+    /* --spacing-md: ??? */
+    /* --spacing-lg: ??? */
+    /* --spacing-xl: ??? */
+
+
+
+    /* ****** */
+    /* Rounded */
+    /* ****** */
+
+    /* --rounded-sm: ??? */
+    /* --rounded-md: ??? */
+    /* --rounded-lg: ??? */
+    /* --rounded-xl: ??? */
 }
 
 @layer styleguide {
 
-    /* Schrijf hier de verschillende stijlen, die
-       gedeeld gaan worden door jullie projecten */
-
-    /* Kleuren */
-    .color-example {
-        background-color: #bada55;
+    /* ****************************************** */
+    /* Schrijf hier de verschillende stijlen, die */
+    /* gedeeld gaan worden door jullie projecten  */
+    /* ****************************************** */
+    body {
+        color: var(--fg-0);
+        background-color: var(--bg-0);
     }
 
+    /* ******* */
+    /* Kleuren */
+    /* ******* */
+
+    .accent {
+        background-color: var(--accent);
+    }
+
+    /* ********** */
     /* Typografie */
+    /* ********** */
 
 
-    /* Formulier elementen */
+    /* ******************* */
+    /* Formulier Elementen */
+    /* ******************* */
 
 }
