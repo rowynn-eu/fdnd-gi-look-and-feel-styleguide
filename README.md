@@ -17,8 +17,8 @@ Als je een custom property toevoeg, zoals voor onze design tokens, dan zien ze e
 html {
 
 /* fg staat voor foreground, bg voor backrgound */
---fg-0: light-dark(#333, #fff)
---bg-0: light-dark(#fff, #333)
+--fg-0: light-dark(#333, #fff);
+--bg-0: light-dark(#fff, #333);
 
 }
 
