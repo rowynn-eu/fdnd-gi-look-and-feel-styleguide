@@ -25,31 +25,31 @@ html {
 ```
 
 
-### BEM-like CSS
-[Bem](https://bem.info/en/methodology/css/) is een naam-conventie voor nette code in je CSS. Het zorgt ervoor dat het goed leesbaar is. Het werkt met het eerst definiëren van een ``block`` en daarna een ``element``. Bijvoorbeeld, ``block__element``, of ``button__svg``
-Class properties krijgen geen ``--`` als prefix om ze te onderscheiden met custom properties/variablen, maar spaties krijgen nog steeds een ``-``
+### Class selectors
 
-Simpele class selectors:
+Een class noem je eerst het HTML element, en daarna wat het is.
+
+bijvoorbeeld. 
+
 ```css
 
 .button-menu {
-padding: var(--spacing-m);
+/* je code hier */
+}
+
+.input-search {
+/* je code hier */
+}
+
+.a-link {
+/* je code hier */
+}
+
+.a-cta-button {
+/* je code hier */
 }
 
 ```
-
-Nested HTML selectors:
-
-Als het een geneste onderdeel is, dan krijgt het een ``__``
-
-```css
-
-.button__menu-logo {
-background-image: url('....');
-]
-
-```
-
 
 ### Comments
 Probeer de volgende comments te gebruiken tussen componenten met 1 regel witruimte.
