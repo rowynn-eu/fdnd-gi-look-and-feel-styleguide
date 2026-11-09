@@ -25,31 +25,31 @@ html {
 ```
 
 
-### BEM-like CSS
+### Class selectors
 
-Class properties krijgen ``--`` als prefix net zoals custom properties. Spaties krijgen een een ``-``
+Een class noem je eerst het HTML element, en daarna wat het is.
 
-Simpele class selectors:
+bijvoorbeeld. 
+
 ```css
 
-.--button-menu {
-padding: var(--spacing-m);
+.button-menu {
+/* je code hier */
+}
+
+.input-search {
+/* je code hier */
+}
+
+.a-link {
+/* je code hier */
+}
+
+.a-cta-button {
+/* je code hier */
 }
 
 ```
-
-Nested HTML selectors:
-
-Als het een geneste onderdeel is, dan krijgt het een ``__``
-
-```css
-
-.--button__menu-logo {
-background-image: url('....');
-]
-
-```
-
 
 ### Comments
 Probeer de volgende comments te gebruiken tussen componenten met 1 regel witruimte.
