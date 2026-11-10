@@ -5,6 +5,11 @@
    https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Styling_basics/Cascade_layers
    https://css-tricks.com/css-cascade-layers/ */
 
+body {
+    color: var(--fg-0);
+    background-color: var(--bg-0);
+}
+
 @layer generiek {
 
   html, body {

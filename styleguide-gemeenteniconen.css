@@ -2,12 +2,21 @@
    https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Styling_basics/Cascade_layers
    https://css-tricks.com/css-cascade-layers/ */
 
+@font-face {
+    font-family: 'Geist';
+    font-display: fallback;
+    font-weight: 100;
+    font-stretch: normal;
+    font-style: normal;
+    src: url(/fonts/Geist/static/Geist-Thin.ttf);
+}
+
 :root {
     color-scheme: light dark;
 
-    /* ********** */
-    /* Foreground */
-    /* ********** */
+    /* **************** */
+    /* MARK: Foreground */
+    /* **************** */
 
     --fg-0: light-dark(#333, #fff);
     --fg-1: light-dark(#444, #eee);
@@ -15,9 +24,9 @@
 
 
 
-    /* ********** */
-    /* Background */
-    /* ********** */
+    /* **************** */
+    /* MARK: Background */
+    /* **************** */
 
     --bg-0: light-dark(#fff, #333);
     --bg-1: light-dark(#eee, #444);
@@ -25,9 +34,9 @@
 
 
     
-    /* ****** */
-    /* Accent */
-    /* ****** */
+    /* ************ */
+    /* MARK: Accent */
+    /* ************ */
 
     --accent: light-dark(#1f2c41, #1F4DD6);
     --accent-text: #fff;
@@ -35,7 +44,7 @@
 
 
     /* ******* */
-    /* Spacing */
+    /* MARK: Spacing */
     /* ******* */
 
     /* --spacing-sm: ??? */
@@ -61,10 +70,7 @@
     /* Schrijf hier de verschillende stijlen, die */
     /* gedeeld gaan worden door jullie projecten  */
     /* ****************************************** */
-    body {
-        color: var(--fg-0);
-        background-color: var(--bg-0);
-    }
+
 
     /* ******* */
     /* Kleuren */
@@ -75,6 +81,46 @@
     /* Typografie */
     /* ********** */
 
+    body {
+        line-height: 1.4;
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: "Geist", sans-serif;
+            font-weight: 600;
+            text-wrap: balance;
+            overflow-wrap: break-word;
+            hyphens: auto;
+        }
+
+        h1 {
+            font-size: 2rem;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+        }
+
+        h3 {
+            font-size: 1.25rem;
+        }
+
+        p, a, ol, ul, em, strong {
+            font-family: 'Roboto Slab', serif;
+            font-weight: 400;
+        }
+
+        b, strong {
+            font-family: 500;
+        }
+
+        article, section {
+            text-wrap: pretty;
+        }
+
+        p, li {
+            max-width: 90ch;
+        }
+    }
 
     /* ******************* */
     /* Formulier Elementen */
