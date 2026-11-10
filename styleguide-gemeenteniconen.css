@@ -2,14 +2,82 @@
    https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Styling_basics/Cascade_layers
    https://css-tricks.com/css-cascade-layers/ */
 
+
+    /* *********** */
+    /* MARK: GEIST */
+    /* *********** */
+
 @font-face {
     font-family: 'Geist';
     font-display: fallback;
-    font-weight: 100;
-    font-stretch: normal;
+    font-weight: 400;
     font-style: normal;
-    src: url(/fonts/Geist/static/Geist-Thin.ttf);
+    src: url(/assets/fonts/geist/static/geist-latin-400-normal.woff2) format("woff2"), 
+         url(/assets/fonts/geist/static/geist-latin-400-normal.woff) format("woff"), 
+         url(/assets/fonts/geist/static/geist-latin-400-normal.ttf) format("ttf");
 }
+
+@font-face {
+    font-family: 'Geist';
+    font-display: fallback;
+    font-weight: 400;
+    font-style: italic;
+    src: url(/assets/fonts/geist/static/geist-latin-400-italic.woff2) format("woff2"), 
+         url(/assets/fonts/geist/static/geist-latin-400-italic.woff) format("woff"), 
+         url(/assets/fonts/geist/static/geist-latin-400-italic.ttf) format("ttf");
+}
+
+@font-face {
+    font-family: 'Geist';
+    font-display: fallback;
+    font-weight: 700;
+    font-style: normal;
+    src: url(/assets/fonts/geist/static/geist-latin-700-normal.woff2) format("woff2"), 
+         url(/assets/fonts/geist/static/geist-latin-700-normal.woff) format("woff"), 
+         url(/assets/fonts/geist/static/geist-latin-700-normal.ttf) format("ttf");
+}
+
+@font-face {
+    font-family: 'Geist';
+    font-display: fallback;
+    font-weight: 700;
+    font-style: italic;
+    src: url(/assets/fonts/geist/static/geist-latin-700-italic.woff2) format("woff2"), 
+         url(/assets/fonts/geist/static/geist-latin-700-italic.woff) format("woff"), 
+         url(/assets/fonts/geist/static/geist-latin-700-italic.ttf) format("ttf");
+}
+
+
+
+   /* *********&&&&&&&* */
+   /* MARK: ROBOTO SLAB */
+   /* *********&&&***** */
+
+@font-face {
+    font-family: 'Roboto Slab';
+    font-display: fallback;
+    font-weight: 400;
+    font-style: normal;
+    src: url(/assets/fonts/roboto-slab/static/roboto-slab-latin-400-normal.woff2) format("woff2"), 
+         url(/assets/fonts/roboto-slab/static/roboto-slab-latin-400-normal.woff) format("woff"), 
+         url(/assets/fonts/roboto-slab/static/roboto-slab-latin-400-normal.ttf) format("ttf");
+}
+
+@font-face {
+    font-family: 'Roboto Slab';
+    font-display: fallback;
+    font-weight: 700;
+    font-style: normal;
+    src: url(/assets/fonts/roboto-slab/static/roboto-slab-latin-700-normal.woff2) format("woff2"), 
+         url(/assets/fonts/roboto-slab/static/roboto-slab-latin-700-normal.woff) format("woff"), 
+         url(/assets/fonts/roboto-slab/static/roboto-slab-latin-700-normal.ttf) format("ttf");
+}
+
+
+
+    /* *********** */
+    /* MARK: ROOT */
+    /* *********** */
 
 :root {
     color-scheme: light dark;
@@ -43,9 +111,9 @@
 
 
 
-    /* ******* */
+    /* ************* */
     /* MARK: Spacing */
-    /* ******* */
+    /* ************* */
 
     /* --spacing-sm: ??? */
     /* --spacing-md: ??? */
@@ -54,9 +122,9 @@
 
 
 
-    /* ****** */
-    /* Rounded */
-    /* ****** */
+    /* ************* */
+    /* MARK: Rounded */
+    /* ************* */
 
     /* --rounded-sm: ??? */
     /* --rounded-md: ??? */
@@ -72,14 +140,14 @@
     /* ****************************************** */
 
 
-    /* ******* */
-    /* Kleuren */
-    /* ******* */
+    /* ************* */
+    /* MARK: Kleuren */
+    /* ************* */
     
 
-    /* ********** */
-    /* Typografie */
-    /* ********** */
+    /* **************** */
+    /* MARK: Typografie */
+    /* **************** */
 
     body {
         line-height: 1.4;
@@ -122,8 +190,8 @@
         }
     }
 
-    /* ******************* */
-    /* Formulier Elementen */
-    /* ******************* */
+    /* ************************* */
+    /* MARK: Formulier Elementen */
+    /* ************************* */
 
 }
