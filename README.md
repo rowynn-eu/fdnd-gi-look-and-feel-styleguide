@@ -52,7 +52,9 @@ bijvoorbeeld.
 ```
 
 ### Comments
-Als je een comment ga toevoegen aan het stylesheet, probeer comments op zulke manier toe tevoegen. Indien nodig, kan je "MARK:" toevoegen aan het begin.
+Als je een comment ga toevoegen aan het stylesheet boven aan een hoop code, probeer comments op zulke manier toe tevoegen. Indien nodig, kan je "MARK:" toevoegen aan het begin.
+
+Dit kan je een 'footmark noemen'.
 ```css
 
 /*********/
@@ -68,6 +70,9 @@ Als je een comment ga toevoegen aan het stylesheet, probeer comments op zulke ma
 /***************/
 
 ```
+
+Als je in-line comments wil gebruiken, hoef je geen visueel marker te gebruiken voor overzichtelijkheid. Dat kan je gewoon laten zoals in de vorige voorbeelden.
+
 ## Licentie
 
 This project is licensed under the terms of the [MIT license](./LICENSE).
