@@ -115,6 +115,10 @@
     /* MARK: Spacing */
     /* ************* */
 
+    /*  Deze custom properties kan je gebruiken voor witruimte, 
+        maar ook bijvoorbeeld voor negatief ruimte, zoals voor 
+        een border-radius bij een knop. Dat heeft standaard 4px. */
+
     --spacing-xs:   0.25rem;      /* 4px */
     --spacing-sm:   0.5rem;       /* 8px */
     --spacing-md:   1rem;         /* 16px */
