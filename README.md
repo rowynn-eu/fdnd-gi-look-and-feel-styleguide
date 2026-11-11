@@ -60,6 +60,14 @@ Als je een comment ga toevoegen aan het stylesheet, probeer comments op zulke ma
 /*********/
 
 ```
+
+```css
+
+/***************/
+/* MARK: TITLE */
+/***************/
+
+```
 ## Licentie
 
 This project is licensed under the terms of the [MIT license](./LICENSE).
