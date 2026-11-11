@@ -52,8 +52,7 @@ bijvoorbeeld.
 ```
 
 ### Comments
-Probeer de volgende comments te gebruiken tussen componenten met 1 regel witruimte.
-
+Als je een comment ga toevoegen aan het stylesheet, probeer comments op zulke manier toe tevoegen. Indien nodig, kan je "MARK:" toevoegen aan het begin.
 ```css
 
 /*********/
