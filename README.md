@@ -27,25 +27,38 @@ html {
 
 ### Class selectors
 
-Een class noem je eerst het HTML element, en daarna wat het is.
+[BEM](https://bem.info/en/methodology/css/) is ingewikkeld. Een class noem je eerst het HTML element, en daarna wat voor functie het heeft.
 
 bijvoorbeeld. 
 
 ```css
 
-.button-menu {
-/* je code hier */
-}
-
 .input-search {
 /* je code hier */
 }
 
-.a-link {
+.input-radio {
 /* je code hier */
 }
 
-.a-cta-button {
+.input-select {
+/* je code hier */
+}
+
+.input-option {
+/* je code hier */
+}
+
+
+.h1 {
+/* je code hier */
+}
+
+.h2 {
+/* je code hier */
+}
+
+.h3 {
 /* je code hier */
 }
 
