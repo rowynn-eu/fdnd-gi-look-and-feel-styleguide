@@ -12,9 +12,9 @@
     font-display: fallback;
     font-weight: 400;
     font-style: normal;
-    src: url(/assets/fonts/geist/static/geist-latin-400-normal.woff2) format("woff2"), 
-         url(/assets/fonts/geist/static/geist-latin-400-normal.woff) format("woff"), 
-         url(/assets/fonts/geist/static/geist-latin-400-normal.ttf) format("ttf");
+    src: url(./assets/fonts/geist/static/geist-latin-400-normal.woff2) format("woff2"), 
+         url(./assets/fonts/geist/static/geist-latin-400-normal.woff) format("woff"), 
+         url(./assets/fonts/geist/static/geist-latin-400-normal.ttf) format("ttf");
 }
 
 @font-face {
@@ -22,9 +22,9 @@
     font-display: fallback;
     font-weight: 400;
     font-style: italic;
-    src: url(/assets/fonts/geist/static/geist-latin-400-italic.woff2) format("woff2"), 
-         url(/assets/fonts/geist/static/geist-latin-400-italic.woff) format("woff"), 
-         url(/assets/fonts/geist/static/geist-latin-400-italic.ttf) format("ttf");
+    src: url(./assets/fonts/geist/static/geist-latin-400-italic.woff2) format("woff2"), 
+         url(./assets/fonts/geist/static/geist-latin-400-italic.woff) format("woff"), 
+         url(./assets/fonts/geist/static/geist-latin-400-italic.ttf) format("ttf");
 }
 
 @font-face {
@@ -32,9 +32,9 @@
     font-display: fallback;
     font-weight: 700;
     font-style: normal;
-    src: url(/assets/fonts/geist/static/geist-latin-700-normal.woff2) format("woff2"), 
-         url(/assets/fonts/geist/static/geist-latin-700-normal.woff) format("woff"), 
-         url(/assets/fonts/geist/static/geist-latin-700-normal.ttf) format("ttf");
+    src: url(./assets/fonts/geist/static/geist-latin-700-normal.woff2) format("woff2"), 
+         url(./assets/fonts/geist/static/geist-latin-700-normal.woff) format("woff"), 
+         url(./assets/fonts/geist/static/geist-latin-700-normal.ttf) format("ttf");
 }
 
 @font-face {
@@ -42,9 +42,9 @@
     font-display: fallback;
     font-weight: 700;
     font-style: italic;
-    src: url(/assets/fonts/geist/static/geist-latin-700-italic.woff2) format("woff2"), 
-         url(/assets/fonts/geist/static/geist-latin-700-italic.woff) format("woff"), 
-         url(/assets/fonts/geist/static/geist-latin-700-italic.ttf) format("ttf");
+    src: url(./assets/fonts/geist/static/geist-latin-700-italic.woff2) format("woff2"), 
+         url(./assets/fonts/geist/static/geist-latin-700-italic.woff) format("woff"), 
+         url(./assets/fonts/geist/static/geist-latin-700-italic.ttf) format("ttf");
 }
 
 
@@ -58,9 +58,9 @@
     font-display: fallback;
     font-weight: 400;
     font-style: normal;
-    src: url(/assets/fonts/roboto-slab/static/roboto-slab-latin-400-normal.woff2) format("woff2"), 
-         url(/assets/fonts/roboto-slab/static/roboto-slab-latin-400-normal.woff) format("woff"), 
-         url(/assets/fonts/roboto-slab/static/roboto-slab-latin-400-normal.ttf) format("ttf");
+    src: url(./assets/fonts/roboto-slab/static/roboto-slab-latin-400-normal.woff2) format("woff2"), 
+         url(./assets/fonts/roboto-slab/static/roboto-slab-latin-400-normal.woff) format("woff"), 
+         url(./assets/fonts/roboto-slab/static/roboto-slab-latin-400-normal.ttf) format("ttf");
 }
 
 @font-face {
@@ -68,9 +68,9 @@
     font-display: fallback;
     font-weight: 700;
     font-style: normal;
-    src: url(/assets/fonts/roboto-slab/static/roboto-slab-latin-700-normal.woff2) format("woff2"), 
-         url(/assets/fonts/roboto-slab/static/roboto-slab-latin-700-normal.woff) format("woff"), 
-         url(/assets/fonts/roboto-slab/static/roboto-slab-latin-700-normal.ttf) format("ttf");
+    src: url(./assets/fonts/roboto-slab/static/roboto-slab-latin-700-normal.woff2) format("woff2"), 
+         url(./assets/fonts/roboto-slab/static/roboto-slab-latin-700-normal.woff) format("woff"), 
+         url(./assets/fonts/roboto-slab/static/roboto-slab-latin-700-normal.ttf) format("ttf");
 }
 
     /* *********** */
