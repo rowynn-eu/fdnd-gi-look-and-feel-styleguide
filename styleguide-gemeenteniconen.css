@@ -49,9 +49,9 @@
 
 
 
-   /* *********&&&&&&&* */
+   /* ***************** */
    /* MARK: ROBOTO SLAB */
-   /* *********&&&***** */
+   /* ***************** */
 
 @font-face {
     font-family: 'Roboto Slab';
@@ -72,8 +72,6 @@
          url(/assets/fonts/roboto-slab/static/roboto-slab-latin-700-normal.woff) format("woff"), 
          url(/assets/fonts/roboto-slab/static/roboto-slab-latin-700-normal.ttf) format("ttf");
 }
-
-
 
     /* *********** */
     /* MARK: ROOT */
@@ -106,10 +104,9 @@
     /* MARK: Accent */
     /* ************ */
 
-    --accent: light-dark(#1f2c41, #1F4DD6);
-    --accent-text: #fff;
-
-
+    --accent:          light-dark(#1F2C41, #1F4DD6);
+    --accent-muted:    light-dark(#1F2C41CC, #1F4DD666); /* light: 80% dark: 40% */
+    --accent-text:     #fff;
 
     /* ************* */
     /* MARK: Spacing */
