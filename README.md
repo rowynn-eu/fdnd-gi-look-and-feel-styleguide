@@ -27,7 +27,7 @@ html {
 
 ### Class selectors
 
-[BEM](https://bem.info/en/methodology/css/) is ingewikkeld. Een class noem je eerst het HTML element, en daarna wat voor functie het heeft.
+[BEM](https://bem.info/en/methodology/css/) is ingewikkeld. Een class noem je eerst het HTML element, en daarna wat voor functie het heeft. Er zijn uitzonderingen, in het geval van `select` en `option` krijgen ze ook de prefix `input-`
 
 bijvoorbeeld. 
 
