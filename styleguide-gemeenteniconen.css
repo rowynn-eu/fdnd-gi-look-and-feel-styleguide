@@ -302,6 +302,31 @@
     /* MARK: Formulier Elementen */
     /* ************************* */
 
+     fieldset{
+        width: fit-content;
+        background-color: var(--bg-1);
+        padding: 0;
+    }
+
+    legend{
+        background-color: var(--accent);
+        width: 100%;
+        box-sizing: border-box;
+        padding: var(--spacing-xs);
+    }
+
+    label{
+        min-width: 160px;
+        border-radius: 4px;
+        display: block;
+        padding: var(--spacing-xs);
+
+        &:has(input:checked){
+        background-color: var(--accent-muted);
+        color: var(--accent-text);
+        }
+    }
+
     a, button, input {
         cursor: pointer;
     }
