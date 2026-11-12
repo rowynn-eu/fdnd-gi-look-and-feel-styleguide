@@ -334,6 +334,10 @@
             background-color: var(--accent-muted);
             color: var(--accent-text);
         }
+
+        &:hover {
+            background-color: color-mix(in srgb, var(--accent-muted) 40%, transparent 60%);
+        }
     }
 
     /* ************ */
@@ -417,7 +421,7 @@
             te ondersteunen kan je een halve pixel toevoegen met calc(), 
             maar 2.5px als waarde werkt niet. Idk? 
         */
-        &:focus-within {
+        &:focus-within, &:hover {
             box-shadow: 0 0 calc(2px + 0.5px) var(--fg-0);
         }
     }
@@ -431,15 +435,20 @@
         justify-content: center;
         align-items: center;
         padding: var(--spacing-sm);
+        transition: 0.125s;
         
         border-radius: var(--rounded-xs);
         border: none;
+
+        &:hover, &:focus {
+            text-decoration-line: underline;
+            translate: 0 -2px;
+        }
+
     }
 
     .button-card {
         flex-direction: column;
-
-        transition: 0.125s;
         
         width: 128px;
         height: 128px;
@@ -452,12 +461,8 @@
         }
 
         &:hover, &:focus {
-            text-decoration-line: underline;
-            translate: 0 -0.2em;
-        }
-
-        &:hover {
             box-shadow: 0.25em 0.25em 0em 0em var(--accent);
+            translate: 0 -0.25em;
         }
     }
 
