@@ -308,6 +308,10 @@
         padding: 0;
         border: none;
         border-radius: var(--spacing-xs);
+
+        :last-child{
+            border-radius: 0 0 var(--spacing-xs) var(--spacing-xs);
+        }
     }
 
     legend{
@@ -325,8 +329,8 @@
         padding: var(--spacing-xs);
 
         &:has(input:checked){
-        background-color: var(--accent-muted);
-        color: var(--accent-text);
+            background-color: var(--accent-muted);
+            color: var(--accent-text);
         }
     }
 
