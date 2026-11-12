@@ -199,15 +199,15 @@
             line-height: 1.2;
         }
 
-        h1, .h1 {
+        h1, .heading-large {
             font-size: 2rem;
         }
 
-        h2, .h2 {
+        h2, .heading-medium {
             font-size: 1.5rem;
         }
 
-        h3, .h3 {
+        h3, .heading-small {
             font-size: 1.25rem;
         }
 
