@@ -123,6 +123,16 @@
     --spacing-xl:   3rem;         /* 48px */
     --spacing-xxl:  4rem;         /* 64px */
 
+    /* *************************** */
+    /* MARK: Rounded, voor melissa */
+    /* *************************** */
+
+    --rounded-xs:   0.25rem;      /* 4px */
+    --rounded-sm:   0.5rem;       /* 8px */
+    --rounded-md:   1rem;         /* 16px */
+    --rounded-lg:   2rem;         /* 32px */
+    --rounded-xl:   3rem;         /* 48px */
+    --rounded-xxl:  4rem;         /* 64px */
 }
 
 @layer styleguide {
