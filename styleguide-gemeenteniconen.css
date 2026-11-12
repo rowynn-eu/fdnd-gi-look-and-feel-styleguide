@@ -211,21 +211,22 @@
             font-size: 1.25rem;
         }
 
-        p, a, ol, ul, em, strong {
+        p, a, ol, ul, em, strong, .p {
             font-family: 'Roboto Slab', serif;
             font-weight: 400;
         }
 
-        b, strong {
+        b, strong, .b {
             font-family: 500;
         }
 
-        article, section {
+        article, section, .section {
             text-wrap: pretty;
         }
 
-        p, li {
-            max-width: 90ch;
+        p, li, .p {
+            max-width: 70ch;
+            hyphens: auto;
         }
     }
 
