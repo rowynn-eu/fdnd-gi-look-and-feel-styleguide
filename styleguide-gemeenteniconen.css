@@ -343,6 +343,87 @@
     }
 
 
+    /* ************ */
+    /* MARK: SEARCH */
+    /* ************ */ 
+
+    search {
+        width: 100%;
+        border-radius: var(--spacing-lg);
+        background-color: var(--bg-1);
+        transition: 0.2s;
+        margin-top: var(--spacing-md);
+        margin-bottom: var(--spacing-md);
+
+        label {
+            display: flex;
+            align-items: center;
+            padding: 0 var(--spacing-md);
+
+            svg {
+                fill: var(--fg-0);
+                width: 32px;
+            }
+
+            .input-search {
+                font-size: inherit;
+                color: var(--fg-0);
+                background-color: transparent;
+                outline: none;
+                border: none;
+                padding: var(--spacing-sm);
+            }
+        } 
+
+        /* wanneer iets in de search gefocussed word, gebeurt dit */
+        &:focus-within {
+            box-shadow: 0 0 2px var(--fg-0);
+        }
+    }
+
+    /*  *************************************************************************
+        Ik weet dat dit DRY breekt een beetje, maar in het geval dat je het niet
+        in een <search> element gaat nesten, dan werkt hij hier met .class
+        selectors ook.  
+    *****************************************************************************/
+
+    .label-search {
+        display: flex;
+        align-items: center;
+
+        padding: 0 var(--spacing-sm);
+        margin-top: var(--spacing-md);
+        margin-bottom: var(--spacing-md);
+
+        width: 100%;
+        box-sizing: border-box;
+        
+        border-radius: var(--spacing-lg);
+        background-color: var(--bg-1);
+
+        transition: 0.2s;
+
+         svg {
+            fill: var(--fg-0);
+            width: 32px;
+        }
+
+        .input-search {
+            font-size: inherit;
+            outline: none;
+            border: none;
+
+            color: var(--fg-0);
+            background-color: inherit;
+
+            padding: var(--spacing-sm);
+        }
+   
+        &:focus-within {
+            box-shadow: 0 0 calc(2px + 0.5px) var(--fg-0);
+        }
+    }
+
 
     
     /* ************* */
