@@ -73,9 +73,9 @@
          url(./assets/fonts/roboto-slab/static/roboto-slab-latin-700-normal.ttf) format("ttf");
 }
 
-    /* *********** */
-    /* MARK: ROOT */
-    /* *********** */
+    /* *********************** */
+    /* MARK: Custom Properties */
+    /* *********************** */
 
 :root {
     color-scheme: light dark;
