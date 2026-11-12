@@ -306,6 +306,8 @@
         width: fit-content;
         background-color: var(--bg-1);
         padding: 0;
+        border: none;
+        border-radius: 4px;
     }
 
     legend{
@@ -313,11 +315,12 @@
         width: 100%;
         box-sizing: border-box;
         padding: var(--spacing-xs);
+        color: var(--accent-text);
+        border-radius: 4px 4px 0 0;
     }
 
     label{
         min-width: 160px;
-        border-radius: 4px;
         display: block;
         padding: var(--spacing-xs);
 
