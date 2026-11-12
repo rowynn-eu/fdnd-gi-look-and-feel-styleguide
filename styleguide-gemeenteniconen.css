@@ -216,22 +216,59 @@
             font-weight: 400;
         }
 
+        p, li, .p {
+            max-width: 70ch;
+            hyphens: auto;
+        }
+
         b, strong, .b {
-            font-family: 500;
+            font-weight: 500;
         }
 
         article, section, .section {
             text-wrap: pretty;
         }
 
-        p, li, .p {
-            max-width: 70ch;
-            hyphens: auto;
+        blockquote, .blockquote {
+            color: var(--accent-text);
+            background-color: var(--accent-muted);
+            
+            border-left: var(--spacing-xs) solid var(--accent);
+            
+            padding:var(--spacing-sm);
+            margin: var(--spacing-sm);
+
+            
+        }
+
+        table {
+            font-family: 'Geist';
+            border-collapse: collapse;
+            background-color:var(--bg-1);
+            border: 1px solid var(--fg-2);
+
+            thead {
+                color: var(--accent-text);
+                background-color:var(--accent);
+            }
+
+            th, td {
+                border: 1px solid var(--fg-2);
+                padding: var(--spacing-sm);
+            }
+
+            tbody > tr:nth-of-type(even) {
+                background-color: var(--bg-2);
+            }
+
         }
     }
 
     /* ************************* */
     /* MARK: Formulier Elementen */
     /* ************************* */
+
+
+    
 
 }
