@@ -225,6 +225,25 @@
             font-weight: 500;
         }
 
+        a {
+            color: inherit;
+            text-underline-offset: var(--spacing-xs);
+            text-decoration-thickness: 1px;
+            text-decoration: underline;
+            font-weight: 500;
+            
+            &:focus-visible {
+                text-decoration: none;
+                translate: 0 -1px;
+            }
+
+            &:hover {
+                text-decoration: none;
+                translate: 0 -1px;
+                outline: var(--fg-0);
+            }
+        }
+
         article, section, .section {
             text-wrap: pretty;
         }
