@@ -27,38 +27,19 @@ html {
 
 ### Class selectors
 
-[BEM](https://bem.info/en/methodology/css/) is ingewikkeld. Een class noem je eerst het HTML element, en daarna wat voor functie het heeft. Er zijn uitzonderingen, in het geval van `select` en `option` krijgen ze ook de prefix `input-`. Verder gebruiken we de taal 'engels' als default.
-
-bijvoorbeeld. 
+[BEM](https://bem.info/en/methodology/css/) is voor nu ingewikkeld. Zorg ervoor dat je class namen duidelijk zijn, en voorkom het herhalen van properties. (DRY). Een goede basis is het te noemen naar de functie of element wat aangepast wordt. Hieronder is een voorbeeld.
 
 ```css
 
-.input-search {
+.filter {
+/* basis styling voor alle filter element */
+}
+
+.filter-radio {
 /* je code hier */
 }
 
-.input-radio {
-/* je code hier */
-}
-
-.input-select {
-/* je code hier */
-}
-
-.input-option {
-/* je code hier */
-}
-
-
-.h1 {
-/* je code hier */
-}
-
-.h2 {
-/* je code hier */
-}
-
-.h3 {
+.filter-checkbox {
 /* je code hier */
 }
 
