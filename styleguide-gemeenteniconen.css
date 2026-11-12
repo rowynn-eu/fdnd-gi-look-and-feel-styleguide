@@ -47,8 +47,6 @@
          url(./assets/fonts/geist/static/geist-latin-700-italic.ttf) format("ttf");
 }
 
-
-
    /* ***************** */
    /* MARK: ROBOTO SLAB */
    /* ***************** */
@@ -88,8 +86,6 @@
     --fg-1: light-dark(#444, #eee);
     --fg-2: light-dark(#555,#ccc);
 
-
-
     /* **************** */
     /* MARK: BACKGROUND */
     /* **************** */
@@ -98,8 +94,6 @@
     --bg-1: light-dark(#eee, #444);
     --bg-2: light-dark(#ccc, #555);
 
-
-    
     /* ************ */
     /* MARK: ACCENT */
     /* ************ */
@@ -342,7 +336,6 @@
         }
     }
 
-
     /* ************ */
     /* MARK: SEARCH */
     /* ************ */ 
@@ -401,7 +394,7 @@
         border-radius: var(--spacing-lg);
         background-color: var(--bg-1);
 
-        transition: 0.2s;
+        transition: 0.125s;
 
          svg {
             fill: var(--fg-0);
@@ -419,12 +412,15 @@
             padding: var(--spacing-sm);
         }
    
+        /* 
+            Ik kan me herinneren dat Sanne iets zij over kleinere schermen 
+            te ondersteunen kan je een halve pixel toevoegen met calc(), 
+            maar 2.5px als waarde werkt niet. Idk? 
+        */
         &:focus-within {
             box-shadow: 0 0 calc(2px + 0.5px) var(--fg-0);
         }
     }
-
-
     
     /* ************* */
     /* MARK: BUTTONS */
@@ -437,7 +433,32 @@
         padding: var(--spacing-sm);
         
         border-radius: var(--rounded-xs);
-        border:0;
+        border: none;
+    }
+
+    .button-card {
+        flex-direction: column;
+
+        transition: 0.125s;
+        
+        width: 128px;
+        height: 128px;
+
+        > svg {
+            fill: var(--fg-0);
+            aspect-ratio: 1 / 1;
+            width: 50%;
+            height: 50%;
+        }
+
+        &:hover, &:focus {
+            text-decoration-line: underline;
+            translate: 0 -0.2em;
+        }
+
+        &:hover {
+            box-shadow: 0.25em 0.25em 0em 0em var(--accent);
+        }
     }
 
     .button-max {
@@ -493,5 +514,10 @@
     .visually-hidden {
         translate: -200%;
     }
+
+
+    /* **************** */
+    /* MARK: CONTAINERS */
+    /* **************** */
 
 }
