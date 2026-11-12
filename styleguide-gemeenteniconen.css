@@ -123,6 +123,16 @@
     --spacing-xl:   3rem;         /* 48px */
     --spacing-xxl:  4rem;         /* 64px */
 
+    /* *************************** */
+    /* MARK: Rounded, voor melissa */
+    /* *************************** */
+
+    --rounded-xs:   0.25rem;      /* 4px */
+    --rounded-sm:   0.5rem;       /* 8px */
+    --rounded-md:   1rem;         /* 16px */
+    --rounded-lg:   2rem;         /* 32px */
+    --rounded-xl:   3rem;         /* 48px */
+    --rounded-xxl:  4rem;         /* 64px */
 }
 
 @layer styleguide {
@@ -225,6 +235,25 @@
             font-weight: 500;
         }
 
+        a {
+            color: inherit;
+            text-underline-offset: var(--spacing-xs);
+            text-decoration-thickness: 1px;
+            text-decoration: underline;
+            font-weight: 500;
+            
+            &:focus-visible {
+                text-decoration: none;
+                translate: 0 -1px;
+            }
+
+            &:hover {
+                text-decoration: none;
+                translate: 0 -1px;
+                outline: var(--fg-0);
+            }
+        }
+
         article, section, .section {
             text-wrap: pretty;
         }
@@ -262,6 +291,11 @@
             }
 
         }
+
+        button, input {
+            font-family: 'Geist';
+            font-size: inherit;
+        }
     }
 
     /* ************************* */
@@ -278,5 +312,70 @@
         color: var(--accent-text);
         }
     }
+    
+    a, button, input {
+        cursor: pointer;
+    }
+
+    .button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: var(--spacing-sm);
+        
+        border-radius: var(--rounded-xs);
+        border:0;
+    }
+
+    .button-max {
+        /* LET OP: Bevat padding!!! */
+        justify-self: center;
+        width: calc-size(100%, size - var(--spacing-md));
+    }
+
+    .button-menu {
+
+        &::before {
+            padding-right: var(--spacing-xs);
+            content: url('./assets/icons/menu.svg') / 'Open';
+        }
+
+        &.is-open::before {
+            padding-right: 0;
+            content: url('./assets/icons/close.svg') / 'Sluit';
+        }
+    }
+
+    .button-github {
+        &::before {
+            padding-right: var(--spacing-xs);
+            content: url('./assets/icons/github-invertocat-white.svg') / 'Open' /* belangrijk dat je dan de knop GitHub noemt */
+        }
+    }
+
+    .is-open {
+        translate: 0; 
+    }
+
+    .skip {
+        z-index: 90;
+        display: block;
+        padding: var(--spacing-xs);
+
+        position: fixed;
+        translate: -200%;
+        
+        &:focus {
+            outline-color: var(--bg-0);
+            color: var(--bg-0) ;
+            background-color: var(--fg-0);
+            translate: unset;
+        }
+    }
+
+    .visually-hidden {
+        translate: -200%;
+    }
+    
 
 }
