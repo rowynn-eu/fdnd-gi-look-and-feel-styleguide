@@ -136,7 +136,48 @@
     /* ************* */
     /* MARK: Kleuren */
     /* ************* */
+
+    .primary { 
+        color:var(--fg-0);
+        background-color:var(--bg-0);
+    }
+
+    .secondary { 
+        color:var(--fg-1);
+        background-color:var(--bg-1);
+    }
+
+    .tertiary { 
+        color:var(--fg-2);
+        background-color:var(--bg-2);
+    }
     
+    .accent {
+        color: var(--accent-text);
+        background-color: var(--accent);
+    }
+
+    .accent-muted {
+        color: var(--accent-text);
+        background-color: var(--accent-muted);
+    }
+
+    .accent-fg {
+        color: var(--accent);
+    }
+
+    .accent-bg {
+        background-color: var(--accent);
+    }
+
+    .light-mode {
+        color-scheme: light;
+    }
+
+    .dark-mode {
+        color-scheme: dark;
+    }
+
 
     /* **************** */
     /* MARK: Typografie */
@@ -158,7 +199,6 @@
         }
 
         h1 {
-            color: body;
             font-size: 2rem;
         }
 
