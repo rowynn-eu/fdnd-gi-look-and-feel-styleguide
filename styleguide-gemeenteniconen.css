@@ -2,134 +2,133 @@
    https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Styling_basics/Cascade_layers
    https://css-tricks.com/css-cascade-layers/ */
 
+@layer styleguide {
 
     /* *********** */
     /* MARK: GEIST */
     /* *********** */
 
-@font-face {
-    font-family: 'Geist';
-    font-display: fallback;
-    font-weight: 400;
-    font-style: normal;
-    src: url(./assets/fonts/geist/static/geist-latin-400-normal.woff2) format("woff2"), 
-         url(./assets/fonts/geist/static/geist-latin-400-normal.woff) format("woff"), 
-         url(./assets/fonts/geist/static/geist-latin-400-normal.ttf) format("ttf");
-}
+    @font-face {
+        font-family: 'Geist';
+        font-display: fallback;
+        font-weight: 400;
+        font-style: normal;
+        src: url(./assets/fonts/geist/static/geist-latin-400-normal.woff2) format("woff2"), 
+            url(./assets/fonts/geist/static/geist-latin-400-normal.woff) format("woff"), 
+            url(./assets/fonts/geist/static/geist-latin-400-normal.ttf) format("ttf");
+    }
 
-@font-face {
-    font-family: 'Geist';
-    font-display: fallback;
-    font-weight: 400;
-    font-style: italic;
-    src: url(./assets/fonts/geist/static/geist-latin-400-italic.woff2) format("woff2"), 
-         url(./assets/fonts/geist/static/geist-latin-400-italic.woff) format("woff"), 
-         url(./assets/fonts/geist/static/geist-latin-400-italic.ttf) format("ttf");
-}
+    @font-face {
+        font-family: 'Geist';
+        font-display: fallback;
+        font-weight: 400;
+        font-style: italic;
+        src: url(./assets/fonts/geist/static/geist-latin-400-italic.woff2) format("woff2"), 
+            url(./assets/fonts/geist/static/geist-latin-400-italic.woff) format("woff"), 
+            url(./assets/fonts/geist/static/geist-latin-400-italic.ttf) format("ttf");
+    }
 
-@font-face {
-    font-family: 'Geist';
-    font-display: fallback;
-    font-weight: 700;
-    font-style: normal;
-    src: url(./assets/fonts/geist/static/geist-latin-700-normal.woff2) format("woff2"), 
-         url(./assets/fonts/geist/static/geist-latin-700-normal.woff) format("woff"), 
-         url(./assets/fonts/geist/static/geist-latin-700-normal.ttf) format("ttf");
-}
+    @font-face {
+        font-family: 'Geist';
+        font-display: fallback;
+        font-weight: 700;
+        font-style: normal;
+        src: url(./assets/fonts/geist/static/geist-latin-700-normal.woff2) format("woff2"), 
+            url(./assets/fonts/geist/static/geist-latin-700-normal.woff) format("woff"), 
+            url(./assets/fonts/geist/static/geist-latin-700-normal.ttf) format("ttf");
+    }
 
-@font-face {
-    font-family: 'Geist';
-    font-display: fallback;
-    font-weight: 700;
-    font-style: italic;
-    src: url(./assets/fonts/geist/static/geist-latin-700-italic.woff2) format("woff2"), 
-         url(./assets/fonts/geist/static/geist-latin-700-italic.woff) format("woff"), 
-         url(./assets/fonts/geist/static/geist-latin-700-italic.ttf) format("ttf");
-}
+    @font-face {
+        font-family: 'Geist';
+        font-display: fallback;
+        font-weight: 700;
+        font-style: italic;
+        src: url(./assets/fonts/geist/static/geist-latin-700-italic.woff2) format("woff2"), 
+            url(./assets/fonts/geist/static/geist-latin-700-italic.woff) format("woff"), 
+            url(./assets/fonts/geist/static/geist-latin-700-italic.ttf) format("ttf");
+    }
 
-   /* ***************** */
-   /* MARK: ROBOTO SLAB */
-   /* ***************** */
+    /* ***************** */
+    /* MARK: ROBOTO SLAB */
+    /* ***************** */
 
-@font-face {
-    font-family: 'Roboto Slab';
-    font-display: fallback;
-    font-weight: 400;
-    font-style: normal;
-    src: url(./assets/fonts/roboto-slab/static/roboto-slab-latin-400-normal.woff2) format("woff2"), 
-         url(./assets/fonts/roboto-slab/static/roboto-slab-latin-400-normal.woff) format("woff"), 
-         url(./assets/fonts/roboto-slab/static/roboto-slab-latin-400-normal.ttf) format("ttf");
-}
+    @font-face {
+        font-family: 'Roboto Slab';
+        font-display: fallback;
+        font-weight: 400;
+        font-style: normal;
+        src: url(./assets/fonts/roboto-slab/static/roboto-slab-latin-400-normal.woff2) format("woff2"), 
+            url(./assets/fonts/roboto-slab/static/roboto-slab-latin-400-normal.woff) format("woff"), 
+            url(./assets/fonts/roboto-slab/static/roboto-slab-latin-400-normal.ttf) format("ttf");
+    }
 
-@font-face {
-    font-family: 'Roboto Slab';
-    font-display: fallback;
-    font-weight: 700;
-    font-style: normal;
-    src: url(./assets/fonts/roboto-slab/static/roboto-slab-latin-700-normal.woff2) format("woff2"), 
-         url(./assets/fonts/roboto-slab/static/roboto-slab-latin-700-normal.woff) format("woff"), 
-         url(./assets/fonts/roboto-slab/static/roboto-slab-latin-700-normal.ttf) format("ttf");
-}
+    @font-face {
+        font-family: 'Roboto Slab';
+        font-display: fallback;
+        font-weight: 700;
+        font-style: normal;
+        src: url(./assets/fonts/roboto-slab/static/roboto-slab-latin-700-normal.woff2) format("woff2"), 
+            url(./assets/fonts/roboto-slab/static/roboto-slab-latin-700-normal.woff) format("woff"), 
+            url(./assets/fonts/roboto-slab/static/roboto-slab-latin-700-normal.ttf) format("ttf");
+    }
 
-    /* *********************** */
-    /* MARK: CUSTOM PROPERTIES */
-    /* *********************** */
+        /* *********************** */
+        /* MARK: CUSTOM PROPERTIES */
+        /* *********************** */
 
-:root {
-    color-scheme: light dark;
+    :root {
+        color-scheme: light dark;
 
-    /* **************** */
-    /* MARK: FOREGROUND */
-    /* **************** */
+        /* **************** */
+        /* MARK: FOREGROUND */
+        /* **************** */
 
-    --fg-0: light-dark(#333, #fff);
-    --fg-1: light-dark(#444, #eee);
-    --fg-2: light-dark(#555,#ccc);
+        --fg-0: light-dark(#333, #fff);
+        --fg-1: light-dark(#444, #eee);
+        --fg-2: light-dark(#555,#ccc);
 
-    /* **************** */
-    /* MARK: BACKGROUND */
-    /* **************** */
+        /* **************** */
+        /* MARK: BACKGROUND */
+        /* **************** */
 
-    --bg-0: light-dark(#fff, #333);
-    --bg-1: light-dark(#eee, #444);
-    --bg-2: light-dark(#ccc, #555);
+        --bg-0: light-dark(#fff, #333);
+        --bg-1: light-dark(#eee, #444);
+        --bg-2: light-dark(#ccc, #555);
 
-    /* ************ */
-    /* MARK: ACCENT */
-    /* ************ */
+        /* ************ */
+        /* MARK: ACCENT */
+        /* ************ */
 
-    --accent:          light-dark(#1F2C41, #1F4DD6);
-    --accent-muted:    light-dark(#1F2C41CC, #1F4DD666); /* light: 80% dark: 40% */
-    --accent-text:     #fff;
+        --accent:          light-dark(#1F2C41, #1F4DD6);
+        --accent-muted:    light-dark(#1F2C41CC, #1F4DD666); /* light: 80% dark: 40% */
+        --accent-text:     #fff;
 
-    /* ************* */
-    /* MARK: SPACING */
-    /* ************* */
+        /* ************* */
+        /* MARK: SPACING */
+        /* ************* */
 
-    /*  Deze custom properties kan je gebruiken voor witruimte, 
-        maar ook bijvoorbeeld voor negatief ruimte, zoals voor 
-        een border-radius bij een knop. Dat heeft standaard 4px. */
+        /*  Deze custom properties kan je gebruiken voor witruimte, 
+            maar ook bijvoorbeeld voor negatief ruimte, zoals voor 
+            een border-radius bij een knop. Dat heeft standaard 4px. */
 
-    --spacing-xs:   0.25rem;      /* 4px */
-    --spacing-sm:   0.5rem;       /* 8px */
-    --spacing-md:   1rem;         /* 16px */
-    --spacing-lg:   2rem;         /* 32px */
-    --spacing-xl:   3rem;         /* 48px */
-    --spacing-xxl:  4rem;         /* 64px */
+        --spacing-xs:   0.25rem;      /* 4px */
+        --spacing-sm:   0.5rem;       /* 8px */
+        --spacing-md:   1rem;         /* 16px */
+        --spacing-lg:   2rem;         /* 32px */
+        --spacing-xl:   3rem;         /* 48px */
+        --spacing-xxl:  4rem;         /* 64px */
 
-    /* *************************** */
-    /* MARK: ROUNDED, VOOR MELISSA */
-    /* *************************** */
+        /* *************************** */
+        /* MARK: ROUNDED, VOOR MELISSA */
+        /* *************************** */
 
-    --rounded-xs:   0.25rem;      /* 4px */
-    --rounded-sm:   0.5rem;       /* 8px */
-    --rounded-md:   1rem;         /* 16px */
-    --rounded-lg:   2rem;         /* 32px */
-    --rounded-xl:   3rem;         /* 48px */
-    --rounded-xxl:  4rem;         /* 64px */
-}
-
-@layer styleguide {
+        --rounded-xs:   0.25rem;      /* 4px */
+        --rounded-sm:   0.5rem;       /* 8px */
+        --rounded-md:   1rem;         /* 16px */
+        --rounded-lg:   2rem;         /* 32px */
+        --rounded-xl:   3rem;         /* 48px */
+        --rounded-xxl:  4rem;         /* 64px */
+    }
 
     /* ****************************************** */
     /* Schrijf hier de verschillende stijlen, die */
