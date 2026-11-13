@@ -107,10 +107,6 @@
         /* MARK: SPACING */
         /* ************* */
 
-        /*  Deze custom properties kan je gebruiken voor witruimte, 
-            maar ook bijvoorbeeld voor negatief ruimte, zoals voor 
-            een border-radius bij een knop. Dat heeft standaard 4px. */
-
         --spacing-xs:   0.25rem;      /* 4px */
         --spacing-sm:   0.5rem;       /* 8px */
         --spacing-md:   1rem;         /* 16px */
@@ -118,9 +114,9 @@
         --spacing-xl:   3rem;         /* 48px */
         --spacing-xxl:  4rem;         /* 64px */
 
-        /* *************************** */
-        /* MARK: ROUNDED, VOOR MELISSA */
-        /* *************************** */
+        /* ************* */
+        /* MARK: ROUNDED */
+        /* *************  */
 
         --rounded-xs:   0.25rem;      /* 4px */
         --rounded-sm:   0.5rem;       /* 8px */
@@ -139,16 +135,28 @@
     /* ************* */
     /* MARK: KLEUREN */
     /* ************* */
+    
+    /* ************************************************************** */
+    /* Primary is een samenvoeging van Foreground-1 en Background-1.  */
+    /* ************************************************************** */
 
     .primary { 
         color:var(--fg-0);
         background-color:var(--bg-0);
     }
 
+    /* **************************************************************** */
+    /* Secondary is een samenvoeging van Foreground-2 en Background-2.  */
+    /* **************************************************************** */
+
     .secondary { 
         color:var(--fg-1);
         background-color:var(--bg-1);
     }
+
+    /* *************************************************************** */
+    /* Tertiary is een samenvoeging van Foreground-3 en Background-3.  */
+    /* *************************************************************** */
 
     .tertiary { 
         color:var(--fg-2);
@@ -173,6 +181,12 @@
         background-color: var(--accent);
     }
 
+
+    /* **************************************************************** */
+    /* Soms wil je dat een element altijd licht is, of donker.          */
+    /* In dat geval, kan je deze class selectors toevoegen aan je HTML. */
+    /* **************************************************************** */
+    
     .light-mode {
         color-scheme: light;
     }
@@ -361,7 +375,7 @@
                 width: 32px;
             }
 
-        .input-search {
+        input, .input-search {
             font-size: inherit;
             outline: none;
             border: none;
@@ -408,7 +422,7 @@
             width: 32px;
         }
 
-        .input-search {
+        input, .input-search {
             font-size: inherit;
             outline: none;
             border: none;
