@@ -482,7 +482,7 @@
         width: 128px;
         height: 128px;
 
-        > svg {
+        > svg, > img {
             fill: var(--fg-0);
             aspect-ratio: 1 / 1;
             width: 50%;
