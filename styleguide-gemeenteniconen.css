@@ -369,6 +369,7 @@
                 outline: none;
                 border: none;
                 padding: var(--spacing-sm);
+                width: 100%;
             }
         } 
 
@@ -409,6 +410,8 @@
             font-size: inherit;
             outline: none;
             border: none;
+            
+            width: 100%;
 
             color: var(--fg-0);
             background-color: inherit;
