@@ -265,7 +265,7 @@
             text-wrap: pretty;
         }
 
-        blockquote, .blockquote {
+        blockquote {
             color: var(--accent-text);
             background-color: var(--accent-muted);
             
