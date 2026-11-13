@@ -216,6 +216,13 @@
             line-height: 1.2;
         }
 
+        /* ***************************************************** */
+        /* In het geval dat je een h2 wilt stijlen als een h3,   */
+        /* zodat het semantsich goed is, maar visueel kleiner,   */
+        /* gebruik heading-grootte.                              */   
+        /* ***************************************************** */
+
+
         h1, .heading-large {
             font-size: 2rem;
         }
