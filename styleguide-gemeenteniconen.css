@@ -380,7 +380,7 @@
 
             svg {
                 fill: var(--fg-0);
-                width: 32px;
+                width: var(--spacing-lg);
             }
 
         input, .input-search {
