@@ -235,17 +235,17 @@
             font-size: 1.25rem;
         }
 
-        p, a, ol, ul, em, strong, .p {
+        p, a, ol, ul, em, strong {
             font-family: 'Roboto Slab', serif;
             font-weight: 400;
         }
 
-        p, li, .p {
+        p, li  {
             max-width: 70ch;
             /* hyphens: auto; */
         }
 
-        b, strong, .b {
+        b, strong {
             font-weight: 500;
         }
 
