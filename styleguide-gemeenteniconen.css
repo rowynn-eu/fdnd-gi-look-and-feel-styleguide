@@ -268,7 +268,7 @@
             }
         }
 
-        article, section, .section {
+        article, section {
             text-wrap: pretty;
         }
 
