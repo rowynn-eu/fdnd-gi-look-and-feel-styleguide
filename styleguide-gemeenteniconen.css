@@ -552,6 +552,9 @@
 
     .visually-hidden {
         translate: -200%;
+        &:focus {
+            translate: unset;
+        }
     }
 
 
