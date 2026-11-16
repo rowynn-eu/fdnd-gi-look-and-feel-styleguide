@@ -212,7 +212,7 @@
             font-weight: 700;
             text-wrap: balance;
             overflow-wrap: break-word;
-            hyphens: auto;
+            /* hyphens: auto; */
             line-height: 1.2;
         }
 
@@ -242,7 +242,7 @@
 
         p, li, .p {
             max-width: 70ch;
-            hyphens: auto;
+            /* hyphens: auto; */
         }
 
         b, strong, .b {
