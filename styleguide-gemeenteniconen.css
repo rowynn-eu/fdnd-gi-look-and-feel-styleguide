@@ -479,8 +479,8 @@
     .button-card {
         flex-direction: column;
         
-        width: 128px;
-        height: 128px;
+        width: 8rem;
+        height: 8rem;
 
         > svg, img {
             fill: var(--fg-0);
