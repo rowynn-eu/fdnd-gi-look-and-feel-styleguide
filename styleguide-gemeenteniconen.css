@@ -329,10 +329,10 @@
         background-color: var(--bg-1);
         padding: 0;
         border: none;
-        border-radius: var(--spacing-xs);
+        border-radius: var(--rounded-xs);
 
         :last-child{
-            border-radius: 0 0 var(--spacing-xs) var(--spacing-xs);
+            border-radius: 0 0 var(--rounded-xs) var(--rounded-xs);
         }
     }
 
@@ -342,7 +342,7 @@
         box-sizing: border-box;
         padding: var(--spacing-xs);
         color: var(--accent-text);
-        border-radius: var(--spacing-xs) var(--spacing-xs) 0 0;
+        border-radius: var(--rounded-xs) var(--rounded-xs) 0 0;
     }
 
     .label-filter{
@@ -420,7 +420,7 @@
         width: 100%;
         box-sizing: border-box;
         
-        border-radius: var(--spacing-lg);
+        border-radius: var(--rounded-lg);
         background-color: var(--bg-1);
 
         transition: 0.125s;
@@ -434,7 +434,7 @@
             font-size: inherit;
             outline: none;
             border: none;
-            border-radius: var(--spacing-lg);
+            border-radius: var(--rounded-lg);
 
             
             width: 100%;
