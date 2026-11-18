@@ -540,13 +540,13 @@
         padding: var(--spacing-xs);
 
         position: fixed;
-        display: none;
+        translate: -1000%;
         
         &:focus {
             outline-color: var(--bg-0);
             color: var(--bg-0) ;
             background-color: var(--fg-0);
-            display: block;
+            translate: unset;
         }
     }
 
